@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتجاتنا</title>
+    <link rel="stylesheet" href="./Css/styles2.css">
+    <script defer src="./scripts2.js"></script>
+</head>
+<body onload="initializePage()">
+    <h1>منتجاتنا</h1>
+    <div class="product-container">
+        <div class="product" data-id="product1">
+            <img src="product1.jpg" alt="المنتج الأول" class="product-image">
+            <h2>المنتج الأول</h2>
+            <p class="description">وصف المنتج الأول.</p>
+            <p class="price">السعر: $10</p>
+            <p class="stock">متبقي: <span id="stock-product1">20</span></p>
+            <div class="stars" id="stars-product1">
+                <span class="star" onclick="rateProduct('product1', 1)">&#9733;</span>
+                <span class="star" onclick="rateProduct('product1', 2)">&#9733;</span>
+                <span class="star" onclick="rateProduct('product1', 3)">&#9733;</span>
+                <span class="star" onclick="rateProduct('product1', 4)">&#9733;</span>
+                <span class="star" onclick="rateProduct('product1', 5)">&#9733;</span>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('product1')">أضف إلى السلة</button>
+        </div>
+        <div class="product" data-id="product2">
+            <img src="product2.jpg" alt="المنتج الثاني" class="product-image">
+            <h2>المنتج الثاني</h2>
+            <p class="description">وصف المنتج الثاني.</p>
+            <p class="price">السعر: $20</p>
+            <p class="stock">متبقي: <span id="stock-product2">15</span></p>
+            <div class="stars" id="stars-product2">
+                <span class="star" onclick="rateProduct('product2', 1)">&#9733;</span>
+                <span class="star" onclick="rateProduct('product2', 2)">&#9733;</span>
+                <span class="star" onclick="rateProduct('product2', 3)">&#9733;</span>
+                <span class="star" onclick="rateProduct('product2', 4)">&#9733;</span>
+                <span class="star" onclick="rateProduct('product2', 5)">&#9733;</span>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('product2')">أضف إلى السلة</button>
+        </div>
+        <div class="product" data-id="product3">
+            <img src="product3.jpg" alt="المنتج الثالث" class="product-image">
+            <h2>المنتج الثالث</h2>
+            <p class="description">وصف المنتج الثالث.</p>
+            <p class="price">السعر: $30</p>
+            <p class="stock">متبقي: <span id="stock-product3">8</span></p>
+            <div class="stars" id="stars-product3">
+                <span class="star" onclick="rateProduct('product3', 1)">&#9733;</span>
+                <span class="star" onclick="rateProduct('product3', 2)">&#9733;</span>
+                <span class="star" onclick="rateProduct('product3', 3)">&#9733;</span>
+                <span class="star" onclick="rateProduct('product3', 4)">&#9733;</span>
+                <span class="star" onclick="rateProduct('product3', 5)">&#9733;</span>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('product3')">أضف إلى السلة</button>
+        </div>
+    </div>
+    <div class="cart-button-container">
+        <a href="cart.html" class="cart-button">الذهاب إلى السلة</a>
+    </div>
+</body>
+</html>
